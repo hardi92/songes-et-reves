@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songes & Prophéties — Application Android</title>
+    <style>
+        :root {
+            --bg-color: #090D16;
+            --surface-color: #141926;
+            --surface-card: #1C2234;
+            --gold: #FFD166;
+            --gold-glow: rgba(255, 209, 102, 0.25);
+            --violet: #A594F9;
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --green: #34D399;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .icon-badge {
+            width: 110px;
+            height: 110px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #FFD166, #A594F9);
+            padding: 3px;
+            box-shadow: 0 10px 30px var(--gold-glow);
+            margin-bottom: 24px;
+        }
+
+        .icon-inner {
+            width: 100%;
+            height: 100%;
+            background: #111625;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+        }
+
+        .pill-tag {
+            background: rgba(255, 209, 102, 0.15);
+            border: 1px solid rgba(255, 209, 102, 0.35);
+            color: var(--gold);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #FFFFFF, #FFD166);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #FFE599, #FFD166);
+            color: #2B1C00;
+            text-decoration: none;
+            padding: 16px 36px;
+            border-radius: 16px;
+            font-size: 17px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 8px 25px rgba(255, 209, 102, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 209, 102, 0.5);
+        }
+
+        .cta-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: #2B1C00;
+        }
+
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            color: var(--green);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            width: 100%;
+            margin-top: 36px;
+            text-align: left;
+        }
+
+        .card {
+            background: var(--surface-card);
+            border: 1px solid #2C395B;
+            border-radius: 18px;
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .install-guide {
+            background: var(--surface-color);
+            border: 1px dashed #3D4D73;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 28px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .install-guide h4 {
+            color: var(--text-primary);
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .install-guide ol {
+            padding-left: 20px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        footer {
+            margin-top: 48px;
+            color: #64748B;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-badge">
+            <div class="icon-inner">🕊️</div>
+        </div>
+
+        <div class="pill-tag">DISCERNEMENT SPIRITUEL & INTELLIGENCE ARTIFICIELLE</div>
+
+        <h1>Songes & Prophéties</h1>
+        <p class="subtitle">
+            Enregistrez vos songes et visions par la voix. Bénéficiez d'une interprétation spirituelle profonde combinant la théologie biblique chrétienne et la sagesse des cultures africaines, avec prières d'autorité et conseils personnalisés.
+        </p>
+
+        <!-- Lien de téléchargement direct de l'APK -->
+        <a id="downloadBtn" href="./app-songes-propheties.apk" download="Songes-Propheties.apk" class="cta-btn">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+            Télécharger l'APK Gratuitement
+        </a>
+
+        <div class="security-badge">
+            🛡️ 100% Gratuit • Chiffré de bout en bout • Mode Hors-ligne
+        </div>
+
+        <div class="features">
+            <div class="card">
+                <h3>🎙️ Enregistrement Vocal Rapide</h3>
+                <p>Appuyez sur un seul bouton pour dicter vos songes dès le réveil. La conversion audio-vers-texte se fait instantanément avec ondes sonores réactives.</p>
+            </div>
+            <div class="card">
+                <h3>📖 Interprétation Biblique & Africaine</h3>
+                <p>Décodage précis des symboles (eaux, aigle, baobab, portes de destinée) selon les Écritures saintes (Job, Joseph, Daniel) et la sagesse ancestrale africaine.</p>
+            </div>
+            <div class="card">
+                <h3>⚔️ Conseils & Prières d'Autorité</h3>
+                <p>Recommandations spirituelles pratiques, jeûne, discernement et proclamations prophétiques de délivrance et de faveur.</p>
+            </div>
+        </div>
+
+        <div class="install-guide">
+            <h4>📱 Comment installer l'application sur votre téléphone Android :</h4>
+            <ol>
+                <li>Cliquez sur le bouton <strong>Télécharger l'APK</strong> ci-dessus.</li>
+                <li>Ouvrez le fichier <code>.apk</code> téléchargé sur votre smartphone.</li>
+                <li>Si Android affiche un avertissement, appuyez sur <strong>Paramètres</strong> et autorisez <em>"Sources inconnues"</em> (ou <em>"Installer des applications inconnues"</em>).</li>
+                <li>Confirmez l'installation. L'application est prête et fonctionne même sans connexion Internet !</li>
+            </ol>
+        </div>
+
+        <footer>
+            « Dieu parle cependant, par des songes, par des visions nocturnes... » (Job 33:14) • Open Source & Gratuit
+        </footer>
+    </div>
+</body>
+</html>

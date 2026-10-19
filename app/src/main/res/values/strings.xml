@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Songes &amp; Prophéties</string>
+    <string name="record_title">Enregistrement Spirituel</string>
+    <string name="tap_to_record">Appuyez pour enregistrer votre songe ou prophétie</string>
+    <string name="recording">Écoute en cours…</string>
+    <string name="stop_and_interpret">Interpréter par l\'IA</string>
+    <string name="history_title">Journal Spirituel</string>
+    <string name="category_dream">Songe / Rêve</string>
+    <string name="category_prophecy">Prophétie / Vision</string>
+    <string name="tab_all">Tous</string>
+    <string name="tab_dreams">Songes</string>
+    <string name="tab_prophecies">Prophéties</string>
+    <string name="tab_favorites">Favoris</string>
+    <string name="biblical_perspective">Perspective Biblique &amp; Versets</string>
+    <string name="african_perspective">Perspective Culturelle Africaine &amp; Symbolisme</string>
+    <string name="spiritual_counsel">Conseils Spirituels &amp; Prières</string>
+    <string name="symbols_detected">Symboles &amp; Clés spirituelles</string>
+    <string name="offline_encrypted_badge">Chiffré de bout en bout • Mode Hors-ligne</string>
+    <string name="daily_reminder">Rappel matinal des songes</string>
+    <string name="daily_reminder_desc">Recevoir un rappel doux au réveil pour noter vos songes</string>
+</resources>

@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "UserDreamRecord": {
+      "path": "users/{userId}/records/{recordId}",
+      "fields": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "subCategory": { "type": "string" },
+        "rawAudioText": { "type": "string" },
+        "biblicalInterpretation": { "type": "string" },
+        "biblicalVerses": { "type": "string" },
+        "africanPerspective": { "type": "string" },
+        "spiritualCounsel": { "type": "string" },
+        "prayersAndActions": { "type": "string" },
+        "keySymbols": { "type": "string" },
+        "isFavorite": { "type": "boolean" },
+        "isEncrypted": { "type": "boolean" },
+        "timestamp": { "type": "number" },
+        "userId": { "type": "string" }
+      }
+    }
+  }
+}

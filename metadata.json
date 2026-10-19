@@ -1,0 +1,6 @@
+{
+  "name": "Songes & Prophéties",
+  "description": "Enregistreur vocal et interprétation spirituelle des rêves et prophéties selon la Bible et les cultures africaines avec conseils personnalisés.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
